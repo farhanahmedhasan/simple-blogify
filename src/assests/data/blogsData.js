@@ -35,7 +35,7 @@ export const blogsData = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'why i left earth',
     author: 'Noman Sheikh',
     date: moment().subtract(0, 'days').calendar(),
