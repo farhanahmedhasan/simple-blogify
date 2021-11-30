@@ -9,6 +9,7 @@ const Navbar = () => {
 
         {/* Nav Links Starts*/}
         <ul className='ml-auto space-x-4 flex items-center self-stretch'>
+          {/* <div>Dark</div> */}
           {navData.map((item) => {
             const { name, link, id, extraClass } = item;
             return (
