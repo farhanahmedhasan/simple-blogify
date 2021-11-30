@@ -1,4 +1,5 @@
 import { navData } from '../assests/data/navData';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -15,9 +16,9 @@ const Navbar = () => {
                 key={id}
                 className={`bg-white-light h-full flex items-center hover:bg-white-dark cursor-pointer ${extraClass}`}
               >
-                <a className='p-3' href={link}>
+                <Link className='p-3' to={link}>
                   {name}
-                </a>
+                </Link>
               </li>
             );
           })}
