@@ -1,0 +1,11 @@
+.navbar {
+  @apply text-pink-light border-b-2 border-white-dark h-16 flex items-center;
+}
+
+.navbar__links {
+  @apply ml-auto space-x-4 flex items-center self-stretch;
+}
+
+.navbar__links__item {
+  @apply bg-white-light h-full flex items-center hover:bg-white-dark cursor-pointer;
+}

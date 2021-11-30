@@ -1,0 +1,15 @@
+.figure {
+  @apply p-4 cursor-pointer hover:bg-white-dark;
+}
+
+.figure__title {
+  @apply text-2xl capitalize;
+}
+
+.figure__date {
+  @apply text-sm;
+}
+
+.figure__author {
+  @apply text-sm block ml-2 mb-4 text-pink-light;
+}

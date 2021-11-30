@@ -1,7 +1,10 @@
+import Blogs from '../components/Blogs';
 const Home = () => {
   return (
     <>
-      <div className='container mt-4'>This is Home Page</div>
+      <div className='container'>
+        <Blogs />
+      </div>
     </>
   );
 };

@@ -4,6 +4,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import 'styles/pages/navbar.css';
+
+@import 'styles/components/blogPreview.css';
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #36454f;
