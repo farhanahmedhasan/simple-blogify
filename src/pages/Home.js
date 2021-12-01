@@ -8,8 +8,12 @@ const Home = () => {
   return (
     <>
       <div className='container'>
-        <BlogList md={2} xl={2} Xxl={4} blogs={blogs} title={`Your Daily Blogs!`} />
-        <BlogList md={2} blogs={blogs.filter((blog) => blog.author === 'Noman Sheikh')} title={`Noman's Blogs!`} />
+        <BlogList gridCol='md:grid-cols-2 2xl:grid-cols-3' blogs={blogs} title={`Your Daily Blogs!`} />
+        <BlogList
+          gridCol='md:grid-cols-2'
+          blogs={blogs.filter((blog) => blog.author === 'Noman Sheikh')}
+          title={`Noman's Blogs!`}
+        />
       </div>
     </>
   );
