@@ -1,5 +1,5 @@
 .figure {
-  @apply p-4 cursor-pointer hover:bg-white-dark;
+  @apply p-4 cursor-pointer  shadow-lg md:shadow-md mb-8 md:mb-0 hover:bg-white-dark;
 }
 
 .figure__title {
