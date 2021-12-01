@@ -38,8 +38,8 @@ export const blogsData = [
     id: 5,
     title: 'why i left earth',
     author: 'Noman Sheikh',
-    date: moment().subtract(0, 'days').calendar(),
+    date: moment().subtract(3, 'days').calendar(),
     content:
-      'Inernet is full with lots of dumb kids, even stackOverflow is toxic these days consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat ',
+      'Internet is full with lots of dumb kids, even stackOverflow is toxic these days consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat ',
   },
 ];
