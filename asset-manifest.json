@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/simple-blogify/static/css/main.d2a4f7d3.chunk.css",
+    "main.css": "/simple-blogify/static/css/main.1e9efa35.chunk.css",
     "main.js": "/simple-blogify/static/js/main.c69485f0.chunk.js",
     "main.js.map": "/simple-blogify/static/js/main.c69485f0.chunk.js.map",
     "runtime-main.js": "/simple-blogify/static/js/runtime-main.e5b56b9c.js",
@@ -8,13 +8,13 @@
     "static/js/2.ef7f7dd4.chunk.js": "/simple-blogify/static/js/2.ef7f7dd4.chunk.js",
     "static/js/2.ef7f7dd4.chunk.js.map": "/simple-blogify/static/js/2.ef7f7dd4.chunk.js.map",
     "index.html": "/simple-blogify/index.html",
-    "static/css/main.d2a4f7d3.chunk.css.map": "/simple-blogify/static/css/main.d2a4f7d3.chunk.css.map",
+    "static/css/main.1e9efa35.chunk.css.map": "/simple-blogify/static/css/main.1e9efa35.chunk.css.map",
     "static/js/2.ef7f7dd4.chunk.js.LICENSE.txt": "/simple-blogify/static/js/2.ef7f7dd4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e5b56b9c.js",
     "static/js/2.ef7f7dd4.chunk.js",
-    "static/css/main.d2a4f7d3.chunk.css",
+    "static/css/main.1e9efa35.chunk.css",
     "static/js/main.c69485f0.chunk.js"
   ]
 }
