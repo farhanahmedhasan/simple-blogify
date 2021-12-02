@@ -1,36 +1,9 @@
-import { useState, useEffect, useCallback } from 'react';
-
 import BlogList from '../components/BlogList';
+import useFetch from '../hooks/useFetch';
 
 const Home = () => {
-  const [blogs, setBlogs] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  const fetchBlogs = useCallback(async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('http://localhost:8000/blogs');
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(`Could not fetch blogs. Received ${response.status}`);
-      }
-
-      setBlogs(data);
-      setLoading(false);
-      setError(null);
-    } catch (error) {
-      setLoading(false);
-      setError(error.message);
-    }
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-      fetchBlogs();
-    }, 3000);
-  }, [fetchBlogs]);
+  const { data, loading, error } = useFetch('https://api.jsonbin.io/b/61a8b0d50ddbee6f8b15e6d7');
+  const blogs = data?.blogs;
 
   return (
     <>
