@@ -8,6 +8,9 @@
 
 @import 'styles/components/blogPreview.css';
 @import 'styles/components/headings.css';
+@import 'styles/components/form.css';
+@import 'styles/components/button.css';
+@import 'styles/components/alert.css';
 
 body {
   font-family: 'Poppins', sans-serif;

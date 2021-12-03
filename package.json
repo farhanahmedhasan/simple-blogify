@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "json-server": "^0.17.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -16,6 +17,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "json:server": "json-server --watch src/assests/data/blogsData.json --port 8000",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "craco start",

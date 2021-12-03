@@ -1,0 +1,6 @@
+.success {
+  @apply p-4 bg-green-light border-green-light text-green-dark fixed top-0 left-1/2 -translate-x-1/2;
+}
+.danger {
+  @apply p-4 bg-red-light border-red-light text-red-dark fixed top-0 left-1/2 -translate-x-1/2;
+}

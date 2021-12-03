@@ -2,8 +2,7 @@ import BlogList from '../components/BlogList';
 import useFetch from '../hooks/useFetch';
 
 const Home = () => {
-  const { data, loading, error } = useFetch('https://api.jsonbin.io/b/61a8b0d50ddbee6f8b15e6d7');
-  const blogs = data?.blogs;
+  const { data: blogs, loading, error } = useFetch('http://localhost:8000/blogs');
 
   return (
     <>

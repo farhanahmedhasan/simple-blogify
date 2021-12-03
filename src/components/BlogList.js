@@ -1,4 +1,5 @@
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 
 const BlogList = ({ blogs, title, gridCol }) => {
   const randomNumber = (max, min) => {
@@ -13,15 +14,16 @@ const BlogList = ({ blogs, title, gridCol }) => {
         {blogs.map((blog) => {
           const { title, author, date, content, id } = blog;
           return (
-            <figure key={id} className='figure'>
-              <div className='flex items-center justify-between'>
-                <h2 className='figure__title'> {title}</h2>
-                <span className='figure__date'>{moment().add(date, 'days').calendar()}</span>
-              </div>
-
-              <span className='figure__author'>by {author}</span>
-              <p className='figure__content'>{content.substring(0, randomNumber(100, 120))} ...</p>
-            </figure>
+            <Link to={`/blogs/${id}`} key={id}>
+              <figure className='figure'>
+                <div className='flex items-center justify-between'>
+                  <h2 className='figure__title'> {title}</h2>
+                  <span className='figure__date'>{moment(date).format('MMMM Do YYYY')}</span>
+                </div>
+                <span className='figure__author'>by {author}</span>
+                <p className='figure__content'>{content.substring(0, randomNumber(100, 120))} ...</p>
+              </figure>
+            </Link>
           );
         })}
       </div>

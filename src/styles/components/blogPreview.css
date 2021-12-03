@@ -1,5 +1,5 @@
 .figure {
-  @apply p-4 cursor-pointer  shadow-lg md:shadow-md mb-8 md:mb-0 hover:bg-white-dark;
+  @apply overflow-hidden p-4 cursor-pointer  shadow-lg md:shadow-md mb-8 md:mb-0 hover:bg-white-dark;
 }
 
 .figure__title {
@@ -12,4 +12,8 @@
 
 .figure__author {
   @apply text-sm block ml-2 mb-4 text-pink-light;
+}
+
+.paragraph {
+  @apply text-base;
 }

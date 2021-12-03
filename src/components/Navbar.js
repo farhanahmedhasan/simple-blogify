@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <div className='container'>
       <nav className='navbar'>
-        <div className='text-2xl'>Simple Blogify</div>
+        <Link to='/' className='text-2xl'>
+          Simple Blogify
+        </Link>
 
         {/* Nav Links Starts*/}
         <ul className='navbar__links'>

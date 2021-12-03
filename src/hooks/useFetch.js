@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-const useFetch = (url) => {
+const useFetch = (url, time = 400) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -14,7 +14,6 @@ const useFetch = (url) => {
       if (!response.ok) {
         throw new Error(`Could not fetch data. Received ${response.status}`);
       }
-
       setData(data);
       setLoading(false);
       setError(null);
@@ -25,8 +24,17 @@ const useFetch = (url) => {
   }, [url]);
 
   useEffect(() => {
-    fetchBlogs();
-  }, [fetchBlogs]);
+    setTimeout(() => {
+      fetchBlogs();
+    }, time);
+
+    //Clean the stats when component unmounts
+    return () => {
+      setData(null);
+      setLoading(false);
+      setError(null);
+    };
+  }, [fetchBlogs, time]);
 
   return { data, loading, error };
 };
