@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/simple-blogify/static/css/main.6b5fb6c2.chunk.css",
-    "main.js": "/simple-blogify/static/js/main.75c22c45.chunk.js",
-    "main.js.map": "/simple-blogify/static/js/main.75c22c45.chunk.js.map",
+    "main.css": "/simple-blogify/static/css/main.efabfcde.chunk.css",
+    "main.js": "/simple-blogify/static/js/main.d5b86a49.chunk.js",
+    "main.js.map": "/simple-blogify/static/js/main.d5b86a49.chunk.js.map",
     "runtime-main.js": "/simple-blogify/static/js/runtime-main.e5b56b9c.js",
     "runtime-main.js.map": "/simple-blogify/static/js/runtime-main.e5b56b9c.js.map",
-    "static/js/2.750ca6eb.chunk.js": "/simple-blogify/static/js/2.750ca6eb.chunk.js",
-    "static/js/2.750ca6eb.chunk.js.map": "/simple-blogify/static/js/2.750ca6eb.chunk.js.map",
+    "static/js/2.5d785e8b.chunk.js": "/simple-blogify/static/js/2.5d785e8b.chunk.js",
+    "static/js/2.5d785e8b.chunk.js.map": "/simple-blogify/static/js/2.5d785e8b.chunk.js.map",
     "index.html": "/simple-blogify/index.html",
-    "static/css/main.6b5fb6c2.chunk.css.map": "/simple-blogify/static/css/main.6b5fb6c2.chunk.css.map",
-    "static/js/2.750ca6eb.chunk.js.LICENSE.txt": "/simple-blogify/static/js/2.750ca6eb.chunk.js.LICENSE.txt"
+    "static/css/main.efabfcde.chunk.css.map": "/simple-blogify/static/css/main.efabfcde.chunk.css.map",
+    "static/js/2.5d785e8b.chunk.js.LICENSE.txt": "/simple-blogify/static/js/2.5d785e8b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e5b56b9c.js",
-    "static/js/2.750ca6eb.chunk.js",
-    "static/css/main.6b5fb6c2.chunk.css",
-    "static/js/main.75c22c45.chunk.js"
+    "static/js/2.5d785e8b.chunk.js",
+    "static/css/main.efabfcde.chunk.css",
+    "static/js/main.d5b86a49.chunk.js"
   ]
 }
