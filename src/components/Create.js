@@ -6,7 +6,7 @@ import usePost from '../hooks/usePost';
 
 export const Create = () => {
   // const navigate = useNavigate();
-  const [state, setState] = useState({ title: '', author: 'farhan ahmed hasan', content: '' });
+  const [state, setState] = useState({ title: '', author: 'Farhan Ahmed Hasan', content: '' });
   const { success, loading, sendData } = usePost('http://localhost:8000/blogs');
 
   const handleChange = (e) => {
@@ -19,7 +19,7 @@ export const Create = () => {
     e.preventDefault();
     const newState = { ...state, date: Date.now() };
     sendData(newState);
-    setState({ title: '', author: 'farhan ahmed hasan', content: '' });
+    setState({ title: '', author: 'Farhan Ahmed Hasan', content: '' });
     // navigate('/');
   };
 
@@ -43,12 +43,12 @@ export const Create = () => {
             name='author'
             className='formControl cursor-pointer capitalize'
           >
-            <option value='noman sheikh'>noman sheikh</option>
-            <option value='farhan ahmed hasan' defaultValue>
-              farhan ahmed hasan
+            <option value='Farhan Ahmed Hasan' defaultValue>
+              Farhan Ahmed Hasan
             </option>
-            <option value='rayhan rahat'>rayhan rahat</option>
-            <option value='fahad sikhder'>fahad sikhder</option>
+            <option value='Noman Sheikh'>Noman Sheikh</option>
+            <option value='Rayhan Rahat'>Rayhan Rahat</option>
+            <option value='Fahad Sikhder'>Fahad Sikhder</option>
           </select>
         </div>
 
@@ -78,7 +78,7 @@ export const Create = () => {
 
       {/* Alert */}
       {success === 'success' && <div className='success'>Your Blog has been added successfully</div>}
-      {success === 'error' && <div className='danger'>Something Wrong !! We couldn't create your blog</div>}
+      {success === 'error' && <div className='danger'>Something Went Wrong !! We couldn't create your blog</div>}
     </div>
   );
 };
